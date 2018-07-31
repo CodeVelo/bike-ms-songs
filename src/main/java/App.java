@@ -34,7 +34,7 @@ public class App
         System.out.println(app.loadKillFile().killFileContent);
         try (Stream<Path> paths = Files.walk(Paths.get(app.sourceDir)))
         {
-          paths.forEach(filePath -> System.out.println(filePath));
+//            paths.forEach(filePath -> System.out.println(filePath));
             paths
                 .filter(Files::isRegularFile)
                 .filter(filePath -> filePath.toString().contains(".mp3"))
@@ -48,18 +48,6 @@ public class App
         catch (Exception e)
         {
             System.out.println(e.getStackTrace());
-        }
-    }
-
-    private static void copyFiles(final Path source, final String destination)
-    {
-        try
-        {
-            Files.copy(source, Paths.get(destination + File.separator + source.getFileName()));
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
         }
     }
 
@@ -81,7 +69,6 @@ public class App
                 "script",
                 File.separator,
                 KILL_FILE);
-
     }
 
     public App loadKillFile()
@@ -96,4 +83,17 @@ public class App
         }
         return this;
     }
+
+    private static void copyFiles(final Path source, final String destination)
+    {
+        try
+        {
+            Files.copy(source, Paths.get(destination + File.separator + source.getFileName()));
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
 }
