@@ -5,7 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -14,7 +13,7 @@ import java.util.stream.Stream;
  */
 public class App
 {
-    private final String SRC = "BikeMS 2016";
+    private final String SRC = "Bike-MS-2019";
     private final String DEST  = "ToPhone";
     private final String KILL_FILE = "mp3-kill-file.txt";
     @SuppressWarnings("SpellCheckingInspection")
@@ -24,15 +23,14 @@ public class App
     private String killFile;
     private List killFileContent;
 
-
     public static void main(String[] args)
     {
         App app = new App();
         System.out.println(app.sourceDir);
         System.out.println(app.destinationDir);
         System.out.println(app.killFile);
-        System.out.println(app.loadKillFile().killFileContent);
-        try (Stream<Path> paths = Files.walk(Paths.get(app.sourceDir)))
+        app.loadKillFile();
+        try (Stream<Path> paths = Files.list(Paths.get(app.sourceDir)))
         {
 //            paths.forEach(filePath -> System.out.println(filePath));
             paths
@@ -88,7 +86,9 @@ public class App
     {
         try
         {
-            Files.copy(source, Paths.get(destination + File.separator + source.getFileName()));
+            Files.copy(source,
+                    Paths.get(destination + File.separator + source.getFileName()),
+                    StandardCopyOption.REPLACE_EXISTING);
         }
         catch (Exception e)
         {
