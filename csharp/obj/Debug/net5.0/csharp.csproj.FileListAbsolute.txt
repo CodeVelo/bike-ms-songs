@@ -1,0 +1,16 @@
+D:\src\github\codevelo\bike-ms-songs\csharp\bin\Debug\net5.0\csharp.exe
+D:\src\github\codevelo\bike-ms-songs\csharp\bin\Debug\net5.0\csharp.deps.json
+D:\src\github\codevelo\bike-ms-songs\csharp\bin\Debug\net5.0\csharp.runtimeconfig.json
+D:\src\github\codevelo\bike-ms-songs\csharp\bin\Debug\net5.0\csharp.runtimeconfig.dev.json
+D:\src\github\codevelo\bike-ms-songs\csharp\bin\Debug\net5.0\csharp.dll
+D:\src\github\codevelo\bike-ms-songs\csharp\bin\Debug\net5.0\ref\csharp.dll
+D:\src\github\codevelo\bike-ms-songs\csharp\bin\Debug\net5.0\csharp.pdb
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.csprojAssemblyReference.cache
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.AssemblyInfoInputs.cache
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.AssemblyInfo.cs
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.csproj.CoreCompileInputs.cache
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.dll
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\ref\csharp.dll
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.pdb
+D:\src\github\codevelo\bike-ms-songs\csharp\obj\Debug\net5.0\csharp.genruntimeconfig.cache
